@@ -11,6 +11,8 @@
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
+}
+* {
   box-sizing: border-box;
 }
 * {
@@ -20,6 +22,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 0%;
+  color: #515076;
 }
 .page {
   background-image: url(/images/bg-1.png);
@@ -36,9 +39,12 @@ body {
   font-size: 70px;
   line-height: 78px;
   text-align: center;
-  color: #515076;
 }
 .product-card-wrapper {
+  width: 1, 110px;
+  height: 1, 191px;
+  top: 408px;
+  left: 85px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -49,7 +55,8 @@ body {
 .product-card {
   width: 340px;
   min-height: 573px;
-
+  top: 408px;
+  left: 85px;
   padding: 25px;
   margin: auto;
   background-color: #51507610;
@@ -61,30 +68,55 @@ body {
   margin: auto;
 }
 .product-card_for-scin {
-  font-weight: 400px;
-  font-size: 12px;
-  line-height: 12px;
+  width: 171px;
+  height: 24px;
+  top: 708px;
+  left: 110px;
+  font-weight: 400;
+  size: 12px;
+  line-height: 24px;
   text-transform: uppercase;
   color: #a5a3b9;
 }
 .product-card_title {
-  font-weight: 700px;
-  line-height: 20px;
-  font-size: 20px;
-  color: #515076;
+  height: 27px;
+  top: 737px;
+  left: 110px;
+  font-weight: 700;
+  size: 20px;
+}
+.product-card_desci {
+  width: 291px;
+  height: 36px;
+  top: 1387px;
+  left: 687px;
+  size: 13px;
+  line-height: 18px;
+}
+.product-card__all-compound {
+}
+.product-card_composition {
+}
+.product-card_text {
+  width: 49px;
+  height: 18px;
+  top: 1438px;
+  left: 302px;
 }
 .product-card_prise-wrapper {
   display: flex;
   justify-content: space-between;
+  width: 290px;
+  height: 24px;
+  top: 1550px;
+  left: 302px;
 }
-.product-card__price-text {
+.product-card__prise-text {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: #515076;
 }
-.product-card_price {
+.product-card_prise {
   font-weight: 400;
   font-size: 20px;
-  line-height: 24px;
 }
