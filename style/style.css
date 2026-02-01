@@ -14,12 +14,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   justify-content: center;
   margin: 0%;
   color: #515076;
 }
+
 .page {
   background-image: url("/images/backgroundimage.png");
   width: 1280px;
