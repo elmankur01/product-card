@@ -1,19 +1,19 @@
-const recolorFirstCardButton = document.getElementById(
+const firstCardRecolorButton = document.getElementById(
   "recolor-first-card-button",
 );
 const firstProductCard = document.querySelector(".product-card");
 const blueHashColor = "#ff0000";
 
-recolorFirstCardButton.addEventListener("click", () => {
+firstCardRecolorButton.addEventListener("click", () => {
   firstProductCard.style.backgroundColor = blueHashColor;
 });
 
 const greenHashColor = "#00ff44";
 
 const productCards = document.querySelectorAll(".product-card");
-const recolorAllCardButton = document.getElementById("recolor-all-card-button");
+const allCardRecolorButton = document.getElementById("recolor-all-card-button");
 
-recolorAllCardButton.addEventListener("click", () => {
+allCardRecolorButton.addEventListener("click", () => {
   productCards.forEach((card) => {
     card.style.backgroundColor = greenHashColor;
   });
