@@ -23,9 +23,7 @@ const googleOpenButton = document.getElementById("open-google-button");
 googleOpenButton.addEventListener("click", openGoogle);
 
 function openGoogle() {
-  const answer = confirm("вы действительно хотите перейти на сайт Google ");
-
-  if (answer === true) {
+  if (confirm("вы действительно хотите перейти на сайт Google")) {
     window.open("https://google.com");
   } else {
     console.log("пользователь отменил переход на сайт");
