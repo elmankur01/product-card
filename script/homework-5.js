@@ -1,32 +1,31 @@
 //задание 5.3
 function showWeather(city, temperature) {
-  console.log(`Сейчас в ${city}
-    температура ${temperature} градусов по 
-    цельсию`);
+  console.log(
+    `Сейчас в ${city} температура ${temperature} градусов по цельсию`,
+  );
 }
 showWeather("Москва", 20);
 showWeather("Питер", 15);
 
 //задание 5.4
+const SPEED_OF_LIGHT = 299792458;
 
-const speedOfLight = 299792458;
-function checkSpeed(speed) {
-  if (speed > speedOfLight) {
-    console.log("Сверхсветовая скорость");
-  } else if (speed < speedOfLight) {
-    console.log("Субсветовая скорость");
+function compareSpeed(speed) {
+  if (speed > SPEED_OF_LIGHT) {
+    console.log(`${speed} м/с → Сверхсветовая скорость (быстрее света)`);
+  } else if (speed < SPEED_OF_LIGHT) {
+    console.log(`${speed} м/с → Субсветовая скорость (медленнее света)`);
   } else {
-    console.log("Скорость света");
+    console.log(`${speed} м/с → Скорость света (равна)`);
   }
 }
-checkSpeed(100);
-checkSpeed(299792458);
-checkSpeed(300000000);
+
+compareSpeed(100);
+compareSpeed(299792458);
+compareSpeed(300000000);
 
 //задание 5.5
-
 const productName = "Финики";
-
 const productPrice = 250;
 
 function buyProduct(myBudget) {
@@ -43,13 +42,12 @@ buyProduct(250);
 buyProduct(100);
 
 //задание 5.6
-
 function myDrink() {
   let drinkName = "Чай";
   let temperature = 60;
 
-  console.log("У меня " + drinkName);
-  console.log("Температура: " + temperature + "°C");
+  console.log(`У меня ${drinkName}`);
+  console.log(`Температура: ${temperature}°C`);
 
   if (temperature > 80) {
     console.log("Горячо! Обожжешься, подожди немного");
@@ -64,11 +62,10 @@ function myDrink() {
 myDrink();
 
 //задание 5.7
-
 let teaBrand = "Липтон";
 let teaCups = 3;
 let teaTime = "вечер";
 
-console.log("Бренд чая: " + teaBrand);
-console.log("Выпито чашек: " + teaCups);
-console.log("Время: " + teaTime);
+console.log(`Бренд чая: ${teaBrand}`);
+console.log(`Выпито чашек: ${teaCups}`);
+console.log(`Время: ${teaTime}`);
