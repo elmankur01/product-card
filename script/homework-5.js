@@ -42,7 +42,7 @@ buyProduct(250);
 buyProduct(100);
 
 //задание 5.6
-function myDrink() {
+function checkDrink() {
   let drinkName = "Чай";
   let temperature = 60;
 
@@ -59,7 +59,7 @@ function myDrink() {
     console.log("Совсем холодный. Сделай новый!");
   }
 }
-myDrink();
+checkDrink();
 
 //задание 5.7
 let teaBrand = "Липтон";
