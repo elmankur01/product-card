@@ -23,13 +23,13 @@ const car = {
 };
 
 // ЗАДАНИЕ 5
-function addMaxSpeedIfMissing(carObject) {
+function ensureMaxSpeed(carObject) {
   if (!carObject.hasOwnProperty("maxSpeed")) {
     carObject.maxSpeed = "185 км/ч";
   }
 }
 
-addMaxSpeedIfMissing(car);
+ensureMaxSpeed(car);
 
 // ЗАДАНИЕ 6
 function getPropertyValue(obj, propertyName) {
@@ -100,11 +100,11 @@ const sciFiBooks = [
 const allBooks = [...books, ...sciFiBooks];
 
 // ЗАДАНИЕ 10
-function createBooksWithRareProperty(booksArray) {
+function getBooksWithRareProperty(booksArray) {
   return booksArray.map((book) => ({
     ...book,
     isRare: book.year < 1950,
   }));
 }
 
-const booksWithRareProperty = createBooksWithRareProperty(allBooks);
+const booksWithRareProperty = getBooksWithRareProperty(allBooks);
