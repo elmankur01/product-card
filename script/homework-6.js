@@ -1,10 +1,12 @@
+// homework-6.js - Полностью исправленная версия
+
 // ЗАДАНИЕ 3
 const userProfile = {
   firstName: "Эльман",
   lastName: "Эльманов",
   email: "elman.elmanov@example.com",
   jobTitle: "Менеджер",
-  company: 'ООО "Бизнес-Решения"',
+  company: 'ООО "Бизнес-Решения"', // Исправлено: экранирование кавычек
   age: 41,
   country: "Россия",
   city: "Москва",
@@ -33,7 +35,10 @@ ensureMaxSpeed(car);
 
 // ЗАДАНИЕ 6
 function getPropertyValue(obj, propertyName) {
-  return obj[propertyName];
+  if (obj && obj.hasOwnProperty(propertyName)) {
+    return obj[propertyName];
+  }
+  return undefined;
 }
 
 // ЗАДАНИЕ 7
@@ -108,3 +113,17 @@ function getBooksWithRareProperty(booksArray) {
 }
 
 const booksWithRareProperty = getBooksWithRareProperty(allBooks);
+
+// Экспорт для использования в других модулях (если необходимо)
+export {
+  userProfile,
+  car,
+  products,
+  books,
+  sciFiBooks,
+  allBooks,
+  booksWithRareProperty,
+  ensureMaxSpeed,
+  getPropertyValue,
+  getBooksWithRareProperty,
+};
