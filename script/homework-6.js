@@ -1,4 +1,4 @@
-// homework-6.js - Полностью исправленная версия
+// homework-6.js - Исправленная версия
 
 // ЗАДАНИЕ 3
 const userProfile = {
@@ -6,7 +6,7 @@ const userProfile = {
   lastName: "Эльманов",
   email: "elman.elmanov@example.com",
   jobTitle: "Менеджер",
-  company: 'ООО "Бизнес-Решения"', // Исправлено: экранирование кавычек
+  company: 'ООО "Бизнес-Решения"',
   age: 41,
   country: "Россия",
   city: "Москва",
@@ -25,17 +25,17 @@ const car = {
 };
 
 // ЗАДАНИЕ 5
-function ensureMaxSpeed(carObject) {
+function addMaxSpeedIfMissing(carObject) {
   if (!carObject.hasOwnProperty("maxSpeed")) {
     carObject.maxSpeed = "185 км/ч";
   }
 }
 
-ensureMaxSpeed(car);
+addMaxSpeedIfMissing(car);
 
 // ЗАДАНИЕ 6
-function getPropertyValue(obj, propertyName) {
-  if (obj && obj.hasOwnProperty(propertyName)) {
+function getObjectPropertyValue(obj, propertyName) {
+  if (obj && typeof obj === "object" && obj.hasOwnProperty(propertyName)) {
     return obj[propertyName];
   }
   return undefined;
@@ -114,7 +114,7 @@ function getBooksWithRareProperty(booksArray) {
 
 const booksWithRareProperty = getBooksWithRareProperty(allBooks);
 
-// Экспорт для использования в других модулях (если необходимо)
+// Экспорт
 export {
   userProfile,
   car,
@@ -123,7 +123,7 @@ export {
   sciFiBooks,
   allBooks,
   booksWithRareProperty,
-  ensureMaxSpeed,
-  getPropertyValue,
+  addMaxSpeedIfMissing,
+  getObjectPropertyValue,
   getBooksWithRareProperty,
 };
