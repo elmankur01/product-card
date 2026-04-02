@@ -33,12 +33,13 @@ function addMaxSpeed(carObject) {
 
 addMaxSpeed(car);
 
-// ЗАДАНИЕ 6
+// ЗАДАНИЕ 6 - функция выводит в консоль значение свойства объекта
 function getObjectPropertyValue(obj, propertyName) {
   if (obj && typeof obj === "object" && obj.hasOwnProperty(propertyName)) {
-    return obj[propertyName];
+    console.log(obj[propertyName]);
+  } else {
+    console.log(undefined);
   }
-  return undefined;
 }
 
 // ЗАДАНИЕ 7
@@ -104,12 +105,12 @@ const sciFiBooks = [
 
 const allBooks = [...books, ...sciFiBooks];
 
-// ЗАДАНИЕ 10
-function getBooksWithRareProperty(booksArray) {
+// ЗАДАНИЕ 10 - если книга выпущена позже 2000 года, то isRecent: true
+function getBooksWithRecentProperty(booksArray) {
   return booksArray.map((book) => ({
     ...book,
-    isRare: book.year < 1950,
+    isRecent: book.year > 2000,
   }));
 }
 
-const booksWithRareProperty = getBooksWithRareProperty(allBooks);
+const booksWithRecentProperty = getBooksWithRecentProperty(allBooks);
