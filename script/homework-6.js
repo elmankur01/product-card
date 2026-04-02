@@ -34,7 +34,7 @@ function addMaxSpeed(carObject) {
 addMaxSpeed(car);
 
 // ЗАДАНИЕ 6 - функция выводит в консоль значение свойства объекта
-function getObjectPropertyValue(obj, propertyName) {
+function showPropertyValue(obj, propertyName) {
   if (obj && typeof obj === "object" && obj.hasOwnProperty(propertyName)) {
     console.log(obj[propertyName]);
   } else {
