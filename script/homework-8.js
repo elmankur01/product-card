@@ -29,7 +29,7 @@ function createProductCard(product) {
   return card;
 }
 
-// ЗАДАНИЕ 4: reduce
+// ЗАДАНИЕ 4 reduce
 const productDescriptions = products.reduce((acc, product) => {
   acc[product.name] = product.description;
   return acc;
@@ -37,7 +37,7 @@ const productDescriptions = products.reduce((acc, product) => {
 
 console.log("ЗАДАНИЕ 4 - Результат reduce:", productDescriptions);
 
-// ЗАДАНИЕ 5: Функция получения количества
+// ЗАДАНИЕ 5 Функция получения количества
 function getNumberOfCards() {
   let userInput;
   let isValid = false;
