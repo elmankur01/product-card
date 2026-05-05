@@ -18,7 +18,7 @@ if (subscribeForm) {
     alert("Спасибо за подписку!");
   });
 }
-// ========== МОДАЛЬНОЕ ОКНО (задание 5) ==========
+// ========== МОДАЛЬНОЕ ОКНО (задание 5) =========
 const modal = document.getElementById("modal");
 const registerBtn = document.getElementById("registerBtn");
 const closeModalBtn = document.getElementById("closeModalBtn");
