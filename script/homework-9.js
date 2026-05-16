@@ -1,4 +1,4 @@
-// ========== ФОРМА ПОДПИСКИ (задание 4) ==========
+// ========= ФОРМА ПОДПИСКИ (задание 4) =========
 const subscribeForm = document.getElementById("subscribeForm");
 if (subscribeForm) {
   subscribeForm.addEventListener("submit", (e) => {
