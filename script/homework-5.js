@@ -31,7 +31,7 @@ const productPrice = 250;
 
 function buyProduct(myBudget) {
   if (myBudget >= productPrice) {
-    // Хватает денег
+    // Хватаетденег
     console.log(`${productName} приобретён. Спасибо за покупку!`);
   } else {
     const difference = productPrice - myBudget;

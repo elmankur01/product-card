@@ -5,7 +5,7 @@ const filteredNumbers = numbers.filter((num) => num >= 5);
 console.log("Задание 2:");
 console.log("Отфильтрованный массив (начиная с 5):", filteredNumbers);
 
-// ЗАДАНИЕ 3
+// ЗАДАНИЕ3
 const kitchenUtensils = [
   "Нож",
   "Разделочная доска",

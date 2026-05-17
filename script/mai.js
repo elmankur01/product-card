@@ -2,7 +2,7 @@ const firstCardRecolorButton = document.getElementById(
   "recolor-first-card-button",
 );
 const firstProductCard = document.querySelector(".product-card");
-const blueHashColor = "#ff0000";
+const blueHashColor = "#ba1a1a";
 
 firstCardRecolorButton.addEventListener("click", () => {
   firstProductCard.style.backgroundColor = blueHashColor;
