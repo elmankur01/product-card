@@ -82,7 +82,7 @@ function renderProducts(productsArray, count) {
   });
 }
 
-// КОД ДЛЯ КНОПОК
+// КОД ДЛЯКНОПОК
 const firstCardRecolorButton = document.getElementById(
   "recolor-first-card-button",
 );

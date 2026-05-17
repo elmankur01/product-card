@@ -24,7 +24,7 @@ const car = {
   owner: userProfile,
 };
 
-// ЗАДАНИЕ 5
+// ЗАДАНИЕ5
 function addMaxSpeed(carObject) {
   if (!carObject.hasOwnProperty("maxSpeed")) {
     carObject.maxSpeed = "185 км/ч";

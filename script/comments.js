@@ -53,7 +53,7 @@ export const firstTenComments = [
     id: 8,
     name: "et omnis dolorem",
     email: "Mallory_Kunze@marie.org",
-    body: "ut voluptatem corrupti velit\nad voluptatem maiores\net nisi velit vero accusamus maiores\nvoluptates quia aliquid ullam eaque",
+    body: "ut voluptatem corrupti velit\nad voluptatem maiores\net nisi velit vero accusamus maiores\nvoluptatesquia aliquid ullam eaque",
   },
   {
     postId: 2,
